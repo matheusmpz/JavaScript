@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Atividade da Aula 02</title>
+        <style>
+            * {
+                font-family: 'Sora', sans-serif;
+            }
+            body {
+                padding: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Criar um algoritmo em JavaScript que solicita do usuário seu nome e o ano de nascimento. Com as informações calcule sua idade e exiba na tela no corpo do HTML. Personalizando a seguinte mensagem:</p>
+        <p><strong><em> "Olá usuário, você tem idade anos!"</em></strong></p>
+        <hr>
+        <script>
+            let name = prompt("Qual seu nome?")
+            let nascimento = prompt("Em que anos você nasceu?")
+
+            let idade = 2024 - parseInt(nascimento)
+            document.write(`<p>Olá <strong> ${name}</strong>, você tem ${idade} anos!</p>`)
+        </script>
+    </body>
+</html>

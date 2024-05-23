@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Aula 02 - JavaScript</title>
+        <style>
+            * {
+                font-family: 'Sora', sans-serif;
+            }
+            body {
+                padding: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <p><strong>Operadores Aritméticos em JavaScript</strong></p>
+        <ul>
+            <li>Adição [<strong>+</strong>]</li>
+            <li>Subtração [<strong>-</strong>]</li>
+            <li>Multiplicação [<strong>*</strong>]</li>
+            <li>Divisão [<strong>/</strong>]</li>
+            <li>Exponenciação [<strong>**</strong>]</li>
+        </ul>
+        <hr>
+
+        <script>
+            /*Some dois números do usuário*/
+            let num1 = prompt("Me de um número:")
+            let num2 = prompt("Me de mais um número:")
+
+            let resultado = parseFloat(num1) + parseFloat(num2)
+
+            document.write(`A soma desses números é: ` + resultado)
+            document.write("<br>")
+            document.write(`A soma desses números é: ${resultado}`)
+        </script>
+    </body>
+</html>
