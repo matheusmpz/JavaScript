@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon-js.png" type="image/x-icon">
+    <title>Aula 04 - Atividade</title>
+    <style>
+        body{
+            padding: 24px;
+            font-family: 'Sora', sans-serif;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estrutura Condicional</h1>
+    <p>Crie um programa em JavaScript que solicita ao usuário dois números e uma operação aritmética (soma, subtração, multiplicação ou divisão). O programa deve realizar a operação solicitada e exibir o resultado, utilizando estruturas condicionais para determinar qual operação executar.</p>
+    <h2>Possiveis Operações Aritméticas:</h2>
+    <p>1- Adição <br> 2- Subtração <br> 3- Multiplicação <br>4- Divisão</p>
+    <hr>
+    <script>
+        let num1 = Number(prompt('Digite um número:'))
+        let num2 = Number(prompt('Digite mais um número:'))
+        let operacao = Number(prompt('Qual operação você deseja realizar? (1, 2, 3 ou 4)'))
+
+        if (operacao === 1) {
+            let resul1 = (num1 + num2)
+            document.write(`O resultado da soma é: ${resul1}`)
+        } else if (operacao === 2) {
+            let resul2 = (num1 - num2)
+            document.write(`O resultado da subtração é: ${resul2}`)
+        } else if (operacao === 3) {
+            let resul3 = (num1 * num2)
+            document.write(`O resultado da multiplicação é: ${resul3}`)
+        } else if (operacao === 4){
+            let resul4 = (num1 / num2)
+            document.write(`O resultado da divisão é: ${resul4}`)
+        } else {
+            document.write("Operação inválida!")
+        }
+    </script>
+</body>
+</html>

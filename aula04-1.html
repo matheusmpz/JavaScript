@@ -18,7 +18,17 @@
     <p>Crie um programa em JavaScript que retorne a saudação com base na hora informada pelo usuário. Retorne se é "Bom dia", "Boa tarde", "Boa noite".</p>
     <hr>
     <script>
-        
+        let hora = prompt("Digite a hora atual sem os minutos:")
+
+        if (hora <= 11) {
+            document.write('<strong>Bom dia</strong> princesa por favor sente na glock,')
+        } else if (hora <= 17) {
+            document.write('Boa tarde!')
+        } else if (hora <= 23){
+            document.write('Boa noite!')
+        } else {
+            document.write('<p style="color: red;"><strong>Horário inválido!</strong></p>')
+        }
     </script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon-js.png" type="image/x-icon">
+    <title>Aula 04.2 de JS</title>
+    <style>
+        body{
+            padding: 24px;
+            font-family: 'Sora', sans-serif;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estrutura Condicional</h1>
+    <p>Crie um programa em JavaScript que avalie a nota e retorne representando em Letra: <strong> A >= 90, B >= 80, C >= 70, D >= 60, E <= 59</strong></p>
+    <hr>
+    <script>
+        let nota = parseInt(prompt('Digite a nota de 0 a 100:'))
+
+        if (nota >= 90) {
+            document.write(`Parabéns você ficou com <strong>A</strong> por ter tirado ${nota}!`)
+        } else if (nota >= 80) {
+            document.write(`Parabéns você ficou com <strong>B</strong> por ter tirado ${nota}!`)
+        } else if (nota >= 70) {
+            document.write(`Parabéns você ficou com <strong>C</strong> por ter tirado ${nota}!`)
+        } else if (nota >= 60) {
+            document.write(`Você ficou com <strong>D</strong> por ter tirado ${nota}!`)
+        } else {
+            document.write(`Você ficou com <strong>E</strong> por ter tirado ${nota}!`)
+        }
+    </script>
+</body>
+</html>
