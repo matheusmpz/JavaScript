@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon-js.png" type="image/x-icon">
+    <title>Aula 05 de JS</title>
+    <style>
+        body{
+            padding: 24px;
+            font-family: 'Sora', sans-serif;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estrutura de Laço de Repetição em Javascript</h1>
+    <p>Imprima na tela uma sequência numérica de 1 a 10.</p>
+    <hr>
+    <script>
+        let qtdeSenhas = parseInt(prompt('Escolha a quantidade de senhas:'))
+        var contador = 0  /* Utilizando var por ter em mais de um script*/
+        while (contador <= qtdeSenhas) {
+            document.write(`${contador} -`)
+            contador++
+            /* 1) pre-variavel e 2) pos-variavel
+
+            1) utilizando ++ {var} (ou qualquer outra) o valor é adicionado na mesma linha
+
+            2) utilizando {var} ++ (ou qualquer outra) o valor é adicionado a partir da próxima linha 
+            */
+        }
+        document.write('<hr>')
+
+        /*for (inicialização; condição; incremento/decremento) {
+            conteúdo
+        }*/
+        for (let contador = 0; contador <= qtdeSenhas; contador++) {
+            document.write(`${contador} -`)
+        }
+        document.write('<hr>')
+
+        /*Utilizando*/
+        var contador = 0
+        do {
+            document.write(`${contador} -`)
+            contador++
+        } while (contador <= qtdeSenhas) {
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon-js.png" type="image/x-icon">
+    <title>Aula 05 de JS</title>
+    <style>
+        body{
+            padding: 24px;
+            font-family: 'Sora', sans-serif;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estrutura de Laço de Repetição em Javascript</h1>
+    <p>Crie um programa que solicite qual a tábuada que será impressa na tela.</p>
+    <hr>
+    <script>
+        let tabuada = parseInt(prompt('Escolha uma tábuada (2 à 10):'))
+        let contador = 0
+
+        while (contador <= 10) {
+            let res = tabuada * contador
+            document.write(`${tabuada} x ${contador} = ${res}<br>`)
+            contador++
+        }
+    </script>
+</body>
+</html>
