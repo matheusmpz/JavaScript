@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon-js.png" type="image/x-icon">
+    <title>Atividade 06</title>
+    <style>
+        body{
+            padding: 24px;
+            font-family: 'Sora', sans-serif;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crie os algoritmos em JavaScript</h1>
+    <p>Crie um programa que calcula o fatorial de um número fornecido pelo usuário.</p>
+    <hr>
+    <script>
+        let num = parseInt(prompt('Escolha um número:'))
+        fat = 1
+        
+        while (num > 1) {
+           fat = fat * num;
+           num--;
+        }
+        document.write(`${fat}`)
+    </script>
+</body>
+</html>

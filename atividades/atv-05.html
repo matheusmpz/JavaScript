@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon-js.png" type="image/x-icon">
+    <title>Atividade 05</title>
+    <style>
+        body{
+            padding: 24px;
+            font-family: 'Sora', sans-serif;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crie os algoritmos em JavaScript</h1>
+    <p>Crie um programa que some os números de 1 até o número fornecido pelo usuário exiba o resultado.</p>
+    <hr>
+    <script>
+        const num = parseInt(prompt('Escolha um número:'))
+        let contador = 0
+
+        while (contador <= num) {
+            let res = num + contador
+            document.write(`${num} + ${contador} = ${res}<br>`)
+            contador++
+        }
+    </script>
+</body>
+</html>

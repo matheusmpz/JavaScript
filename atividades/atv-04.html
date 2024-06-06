@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon-js.png" type="image/x-icon">
+    <title>Atividade 04</title>
+    <style>
+        body{
+            padding: 24px;
+            font-family: 'Sora', sans-serif;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crie os algoritmos em JavaScript</h1>
+    <p>Crie um programa que solicite uma nota ao usuário e exiba uma mensagem dizendo se ele passou (nota maior ou igual a 60) ou não passou.</p>
+    <hr>
+    <script>
+        let nota = parseInt(prompt("Quanto você tirou na prova?"))
+
+        if (nota >= 60) {
+            document.write(`Parabéns você foi aprovado com a nota ${nota}`)
+        } else {
+            document.write(`Infelizmnte você foi reprovado com a nota ${nota}`)
+        }
+    </script>
+</body>
+</html>
