@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon-js.png" type="image/x-icon">
+    <title>Aula 06 de JS</title>
+    <style>
+        body{
+            padding: 24px;
+            font-family: 'Sora', sans-serif;
+            color: #2f2f2f;
+        }
+        button {
+            color: #eeeeee;
+            background-color: #25689e;
+            border: none;
+            border-radius: 4px;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btnAlerta">Mostrar alerta</button>
+    <p id="textoParagrafo">texto inicial</p>
+    <button id="textoBotao">Alterar texto</button>
+
+    <script>
+        const btnAlerta = document.getElementById('btnAlerta')
+        const textoParagrafo = document.getElementById('textoParagrafo')
+        const textoBotao = document.getElementById('textoBotao')
+
+        btnAlerta.addEventListener('click', function(){
+            alert('Botão de alerta clicado!')
+        })
+        textoParagrafo.addEventListener('click', function(){
+            textoParagrafo.textContent = "Uai o texto foi clicado"
+        })
+        textoBotao.addEventListener('click', function(){
+            textoBotao.textContent = "Ue mudo?"
+        })
+    </script>
+</body>
+</html>
