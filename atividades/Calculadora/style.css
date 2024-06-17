@@ -1,0 +1,43 @@
+body{
+    padding: 12px 32px;
+    font-family: 'Sora', sans-serif;
+    color: #eeeeee;
+    background-color: #1f1f1f;
+    text-align: center;
+}
+.title {
+    text-align: center;
+    font-size: 48px;
+}
+.form-input label{
+    font-size: 30px;
+    padding: 12px 0 12px 0;
+}
+.form-input {
+    padding: 24px;
+    text-align: center;
+}
+.form-input input {
+    border-radius: 8px;
+    border: none;
+    padding: 6px;
+}
+button {
+    color: #1f1f1f;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+button i {
+    color: #1f1f1f;
+}
+strong {
+    color: aquamarine;
+}
+#resultado {
+    font-size: 32px;
+}
