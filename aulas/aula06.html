@@ -17,18 +17,41 @@
             border: none;
             border-radius: 4px;
             padding: 6px;
+            cursor: pointer;
+        }
+        #corDiv {
+            width: 100px; 
+            height: 100px; 
+            background-color: #25689e;
+            margin: 10px 0 0px 0px;
+            border-radius: 6px;
+        }
+        #adicionarParagrafo {
+            margin: 10px 0 10px 0;
         }
     </style>
 </head>
 <body>
     <button id="btnAlerta">Mostrar alerta</button>
-    <p id="textoParagrafo">texto inicial</p>
+    <p id="textoParagrafo">Texto inicial</p>
     <button id="textoBotao">Alterar texto</button>
+    <hr>
+    <div id="corDiv"></div>
+    <div id="adicionarParagrafo">Adicionar Parágrafo</div>
+
+    <button id="esconde">Mostrar/Esconder</button>
+    <button id="resetar">Limpar</button>
 
     <script>
         const btnAlerta = document.getElementById('btnAlerta')
         const textoParagrafo = document.getElementById('textoParagrafo')
         const textoBotao = document.getElementById('textoBotao')
+        
+        /*Aula 02*/
+        const corDiv = document.getElementById('corDiv')
+        const adicionarParagrafo = document.getElementById('adicionarParagrafo')
+        const esconde = document.getElementById('esconde')
+        const reset = document.getElementById('resetar')
 
         btnAlerta.addEventListener('click', function(){
             alert('Botão de alerta clicado!')
@@ -38,6 +61,39 @@
         })
         textoBotao.addEventListener('click', function(){
             textoBotao.textContent = "Ue mudo?"
+        })
+
+        /*Cor da div - aula02*/
+        corDiv.addEventListener('mouseover', function(){
+            corDiv.style.backgroundColor = "green"
+        }) //entrada
+        corDiv.addEventListener('mouseleave', function(){
+            corDiv.style.backgroundColor = "#25689e"
+        })//saida
+        adicionarParagrafo.addEventListener('click', function(){
+            const paragrafo = document.createElement("p")
+            paragrafo.textContent = "Novo paragrafo com texto adicionado com sucesso!"
+            document.body.appendChild(paragrafo)
+        })
+        esconde.addEventListener('click', function(){
+            if (corDiv.style.display === "none") {
+                corDiv.style.display = "block"
+            } else {
+                corDiv.style.display = "none"
+            }
+        })
+        resetar.addEventListener('click', function(){
+            textoParagrafo.textContent = "Texto inicial"
+            textoBotao.textContent = "Alterar texto"
+            corDiv.style.backgroundColor = "#25689e" //não necessario ja tem
+
+            const paragrafoExtra = document.querySelectorAll("body > p")
+            console.log(paragrafoExtra)
+            paragrafoExtra.forEach((p, index)=>{
+                 if(index >= 1) {
+                    p.remove()
+                 }
+            })
         })
     </script>
 </body>
