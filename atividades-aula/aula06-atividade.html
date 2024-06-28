@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon-js.png" type="image/x-icon">
+    <title>Consulta de CEP</title>
+    <style>
+        body {
+            padding: 24px;
+            font-family: 'Inter', sans-serif;
+            color: #2f2f2f;
+        }
+        button {
+            background-color: #2f2f2f;
+            color: #eeeeee;
+            border: none;
+            padding: 6px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        button:hover {
+            background-color: rgb(164, 39, 196);
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consulta de CEP</h1>
+    <form action="" id="cadastro" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <p></p><label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <p></p><label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha">
+    <br><br>
+    <fieldset>
+        <legend>Informações de Endereço</legend>
+            <label for="cep">CEP:</label>
+            <input type="number" name="cep" id="cep">
+            <p></p><label for="logradouro">Logradouro:</label>
+            <input type="text" name="logradouro" id="logradouro">
+            <p></p><label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" id="bairro">
+            <p></p><label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade">
+            <p></p><label for="uf">UF:</label>
+            <input type="text" name="uf" id="uf">
+    </fieldset>
+    <br>
+    <section>
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Cancelar</button>
+    </section>
+    </form>
+
+    <script src="busca-cep.js"></script>
+</body>
+</html>
