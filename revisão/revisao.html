@@ -79,6 +79,20 @@
         resultado(`Subtração: ${numx - numy}`)
         resultado(`Multiplicação: ${numx * numy}`)
         resultado(`Divisão: ${numx / numy}`)
+
+        // Verificar faixa de idade criança, adolscente, adulto e idoso
+
+        let idadepessoa = 18
+
+        if(idadepessoa < 10) {
+            return "Você é uma criança!"
+        } else if (idadepessoa => 10 && idadepessoa < 20) {
+            resultado("Você é um adolescente!")
+        } else if (idadepessoa => 20 && idadepessoa > 60) {
+            resultado("Você é um adulto!")
+        } else {
+            resultado("Você é um idoso!") 
+        }
     </script>
 </body>
 </html>
