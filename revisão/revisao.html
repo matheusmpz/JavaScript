@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../icon-js.png" type="image/x-icon">
+    <title>Revisão de JS</title>
+    <style>
+        body{
+            font-family: 'Sora', sans-serif;
+            padding: 24px;
+            color: #2f2f2f;
+        }
+
+        #boxResult {
+            border: 1px solid #2f2f2f;
+            min-height: 25rem;
+            border-radius: 8px;
+            margin: 0 0 16px 0;
+            background-color: #eeeeee;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula de Revisão JavaScript</h1>
+    <section id="boxResult">
+    </section>
+
+    <script>
+        function resultado(mensagem) {
+            const boxresult = document.getElementById('boxResult');
+            boxresult.innerHTML += `<p>${mensagem}</p>`;
+        }
+
+        let num1 = 10;
+        let num2 = 20;
+
+        let result = num1 * num2;
+
+        resultado(`O resultado é: ${result}`);
+
+        // Verificar se um número é par ou ímpar
+        let numero = 10;
+        if(numero % 2 == 0) {
+            resultado(`Número ${numero} é par`);
+        } else {
+            resultado(`Número ${numero} é ímpar`);
+        }
+
+        // Contando até 5 com laço de repetição 
+        for(let i = 1; i <= 5; i++) {
+            resultado(`Número ${i}`);
+        }
+
+        let i = 6
+        while(i <= 10) {
+            resultado(`Número ${i}`);
+            i++
+        }
+
+        // Verifique se essa pessoa é maior de idade
+
+        function maiorIdade(idade){
+            if (idade >= 16) {
+                return "Você pode votar!"
+            }
+            return "Você não pode votar!"
+        }
+
+        let idade = 19
+        resultado(maiorIdade(idade))
+
+        // Calculos simples (adição, subtração, multiplicação, divisão)
+
+        let numx = 10
+        let numy = 15
+
+        resultado(`Adição: ${numx + numy}`)
+        resultado(`Subtração: ${numx - numy}`)
+        resultado(`Multiplicação: ${numx * numy}`)
+        resultado(`Divisão: ${numx / numy}`)
+    </script>
+</body>
+</html>
