@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv 07</title>
+    <link rel="shortcut icon" href="../../icon-js.png" type="image/x-icon">
+    <style>
+        body{
+            font-family: 'Sora', sans-serif;
+            padding: 24px;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let peso = 64
+        let altura = 1.66
+        let imc = peso / (altura ** 2);
+    
+        if(imc < 18.5) {
+            alert('Abaixo do peso!');
+        } else if(imc >= 18.5 && imc <= 24.9) {
+            alert('Peso normal!');
+        } else if(imc >= 25 && imc <= 29.9) {
+            alert('Sobrepeso!');
+        } else if(imc >= 30 && imc <= 34.9) {
+            alert('Obesidade grau 01');
+        } else if(imc >= 35 && imc <= 39.9) {
+            alert('Obesidade grau 02');
+        } else if(imc >= 40) {
+            alert('Obesidade grau 03');
+        }       
+    </script>
+</body>
+</html>
