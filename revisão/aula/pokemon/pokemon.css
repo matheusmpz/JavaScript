@@ -1,0 +1,38 @@
+body {
+    font-family: "Sora", sans-serif;
+    color: #2f2f2f;
+    padding: 24px;
+}
+#main {
+    width: 420px;
+    margin: 0 auto;
+}
+#boxInfoPokemon {
+    padding: 16px;
+    background-color: #bdbdbd81;
+    border: 1px solid #aaaaaa;
+    margin: 12px 0 0 0;
+    border-radius: 6px;
+}
+#boxInfoPokemon h2, img{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+input {
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #bdbdbd81;
+}
+button {
+    border: none;
+    background-color: #2f2f2f;
+    color: #eeeeee;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+h1 {
+    text-align: center;
+}
