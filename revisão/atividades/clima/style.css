@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
+
+#main {
+    font-family: 'Inter', sans-serif;
+    color: #2f2f2f;
+    padding: 80px;
+}
+#header h1 {
+    color: #3F82BF;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#search {
+    margin: 12px 0 24px 0;
+    display: flex;
+    align-items: center;
+}
+#search input {
+    padding: 16px;
+    border: none;
+    width: 605px;
+    height: 40px;
+    border-radius: 8px;
+    background: #E7E7E7;
+}
+#search button {
+    border: none;
+    background: transparent;
+}
+#search img  {
+    width: 24px;
+    height: 24px;
+}
+#city h2 {
+    color: #2F2F2F;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#box {
+    display: flex;
+
+}
+.box_content1 {
+    background-color: #ECECEC;
+    width: 450px;
+    height: 230px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 16px;
+}
+.box_content2 {
+    background-color: #AECBE4;
+    width: 450px;
+    height: 230px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 16px;
+}
