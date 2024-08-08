@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon-js.png" type="image/x-icon">
+    <title>Aula 08 de JS</title>
+    <style>
+        body{
+            padding: 24px;
+            font-family: 'Sora', sans-serif;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a utilizar Arrays</h1>
+
+    <script>
+        let fruta = 'maça'
+        // Utilizando colchetes
+        let frutas =  ["Maça", "Banana", "Tomate"]
+
+        // Utilizando o construtor de Array
+        let numeros = new Array(1,2,3,4,5)
+
+        console.log(frutas)
+        console.log(numeros)
+
+        // Acessando os elementos do Array
+        console.log(frutas[0])
+
+        // Substituir item no Array
+        frutas[0] = "Manga"
+        console.log(frutas[0])
+
+        // Adicionar um item no final do Array
+        frutas.push("Pera")
+        console.log(frutas)
+
+        // Remove the last item
+        frutas.pop()
+        console.log(frutas)
+
+        // Remove o primeiro item
+        frutas.shift()
+        console.log(frutas)
+
+        // Adiciona na primeiro item
+        frutas.unshift("Kavalo")
+        console.log(frutas)
+
+        // Retornar a quantidade de itens do Array
+        console.log(frutas.length)
+
+        // Imprimir os itens do Array
+        for (let i = 0; i < frutas.length; i++) {
+            console.log(frutas[i])
+        }
+
+        frutas.forEach(function(item){
+            console.log(item)
+        })
+
+        let NewList = frutas.map(function(item){
+            // if (item == "Kavalo"){
+            //     return item.toUpperCase()
+            // }
+            // return item
+
+            //if ternario, resume o if tradicional
+            return (item == "Kavalo") ? item.toUpperCase() : item 
+        })
+        
+        console.log(NewList)
+    </script>
+</body>
+</html>
