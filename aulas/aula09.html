@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icon-js.png" type="image/x-icon">
+    <title>Aula 09 de JS</title>
+    <style>
+        body{
+            padding: 24px;
+            font-family: 'Sora', sans-serif;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Orientação de Objetos</h1>
+
+    <script>
+        let pessoa = {
+            nome : "Matheus",
+            idade : 17,
+            profissao : "Desenvolvedor",
+            salario : 2000
+        };
+
+        // Acessando os valores de um objeto
+        console.log(pessoa);
+        console.log(pessoa.idade, pessoa.nome);
+        console.log(pessoa['salario']);
+
+        // Modificando o valor de uma propriedade do objeto
+        pessoa.idade = 21;
+        console.log(pessoa);
+
+        // Adicionando uma nova propriedade
+        pessoa.genero = 'Masculino';
+        console.log(pessoa);
+
+        // Removendo uma propriedade
+        delete pessoa.profissao;
+        console.log(pessoa);
+
+        // Métodos de um objeto
+        let carro = {
+            marca : "Honda",
+            modelo : "Civic",
+            ano : "2019",
+            ligar : function(){
+                console.log(`O seu ${this.modelo} está ligado!`)
+            }
+        };
+        carro.ligar();
+
+        console.log("Atividade >")
+        
+        // Atividade
+        let produto = {
+            nome : "Kavalo",
+            preco : 200000,
+            tipo : "Percheron",
+            estoque : 4
+        };
+
+        console.log(produto);
+
+        produto.nome = "Cavalo";
+        console.log(produto);
+        produto.peso = 612;
+        console.log(produto);
+        delete produto.preco;
+        console.log(produto);
+
+    </script>
+</body>
+</html>
