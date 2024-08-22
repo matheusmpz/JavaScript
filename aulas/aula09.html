@@ -106,8 +106,26 @@
         });
 
         let media = soma / aluno.notas.length;
-
         console.log(`Sua média é: ${media}`);
+
+        // Simplificando o código
+        let alunoB = {
+            nome: "Lucas",
+            idade: 11,
+            curso: "TI",
+            notas: [7, 6, 8, 6],
+            calcularMedia : function(){
+                let soma = 0;
+                this.notas.forEach(function(nota) {
+                    soma += nota;
+                });
+                let media = soma / this.notas.length;
+                console.log(`${alunoB.nome} tem uma média de: ${media.toFixed(2)}`);
+            }
+        };
+
+        // Imprimindo resposta 
+        alunoB.calcularMedia();
     </script>
 </body>
 </html>
