@@ -125,6 +125,36 @@
         };
         // Imprimindo resposta 
         alunoB.calcularMedia();
+
+
+        // Lista de Objetos
+        let estudantes = {
+            lista: [
+                {
+                    nome: "Matheus",
+                    idade: 17,
+                    curso: "TI"
+                },
+                {
+                    nome: "Lucas",
+                    idade: 21,
+                    curso: "Design"
+                },
+                {
+                    nome: "Larissa",
+                    idade: 19,
+                    curso: "Relações Públicas"
+                }
+            ],
+            chamada: function() {
+                this.lista.forEach(function(estudante) {
+                    console.log(`Nome: ${estudante.nome}, Idade: ${estudante.idade}, Curso: ${estudante.curso}`);
+                });
+            }
+        };
+
+        // Imprimindo a chamada
+        estudantes.chamada();
     </script>
 </body>
 </html>
