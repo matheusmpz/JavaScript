@@ -71,6 +71,43 @@
         delete produto.preco;
         console.log(produto);
 
+        // 
+
+        let numeros = [1, 2, 3, 5, 8, 6, 18, 10];
+        let contador = 0;
+
+        numeros.forEach(function(numero) {
+            if (numeros % 2 === 0){
+                contador++;
+            }
+        });
+
+        console.log(`A variável número tem ${contador} números pares!`)
+
+        // 
+
+        let aluno = {
+            nome: "Matheus",
+            idade: 17,
+            curso: "TI",
+            notas: [8, 6, 4, 6]
+        };
+
+        console.log(`O nome do aluno é ${aluno.nome}, tem ${aluno.idade} anos, está atualmente no curso de ${aluno.curso}!`);
+
+        // Imprimindo as notas
+        console.log(`Ele tirou as notas: ${aluno.notas.join(", ")}`);
+
+        // Fazendo a média
+        let soma = 0;
+
+        aluno.notas.forEach(function(nota) {
+            soma += nota;
+        });
+
+        let media = soma / aluno.notas.length;
+
+        console.log(`Sua média é: ${media}`);
     </script>
 </body>
 </html>
